@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Registro de Usuarios - Caso de Uso</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      line-height: 1.6;
+      margin: 0;
+      padding: 0;
+      background-color: #f4f4f9;
+      color: #333;
+    }
+    header {
+      background: #007bff;
+      color: white;
+      padding: 10px 20px;
+      text-align: center;
+    }
+    .container {
+      max-width: 800px;
+      margin: 20px auto;
+      padding: 20px;
+      background: white;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      border-radius: 8px;
+    }
+    h1, h2 {
+      color: #007bff;
+    }
+    ul {
+      padding-left: 20px;
+    }
+    .code-block {
+      background: #f4f4f4;
+      padding: 10px;
+      border-left: 4px solid #007bff;
+      font-family: "Courier New", Courier, monospace;
+      overflow-x: auto;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Registro de Usuarios - Caso de Uso</h1>
+  </header>
+
+  <div class="container">
+    <h2>Descripción</h2>
+    <p>El caso de uso de registro de usuarios permite que nuevos usuarios se registren en una aplicación proporcionando su información básica. Este proceso asegura que el sistema pueda identificar a cada usuario de manera única.</p>
+
+    <h2>Flujo Básico</h2>
+    <ol>
+      <li>El usuario accede a la página de registro.</li>
+      <li>El usuario completa el formulario con los siguientes datos:
+        <ul>
+          <li>Nombre</li>
+          <li>Apellido</li>
+          <li>Email</li>
+          <li>Contraseña</li>
+        </ul>
+      </li>
+      <li>El usuario hace clic en el botón "Registrar".</li>
+      <li>El sistema valida los datos y guarda la información en la base de datos.</li>
+      <li>Se muestra un mensaje confirmando el registro exitoso.</li>
+    </ol>
+
+    <h2>Formulario de Registro (Ejemplo)</h2>
+    <div class="code-block">
+      &lt;form method="POST" action="/registro"&gt;<br>
+      &nbsp;&nbsp;&lt;label for="nombre"&gt;Nombre:&lt;/label&gt;<br>
+      &nbsp;&nbsp;&lt;input type="text" id="nombre" name="nombre" required&gt;<br><br>
+      &nbsp;&nbsp;&lt;label for="apellido"&gt;Apellido:&lt;/label&gt;<br>
+      &nbsp;&nbsp;&lt;input type="text" id="apellido" name="apellido" required&gt;<br><br>
+      &nbsp;&nbsp;&lt;label for="email"&gt;Email:&lt;/label&gt;<br>
+      &nbsp;&nbsp;&lt;input type="email" id="email" name="email" required&gt;<br><br>
+      &nbsp;&nbsp;&lt;label for="password"&gt;Contraseña:&lt;/label&gt;<br>
+      &nbsp;&nbsp;&lt;input type="password" id="password" name="password" required&gt;<br><br>
+      &nbsp;&nbsp;&lt;button type="submit"&gt;Registrar&lt;/button&gt;<br>
+      &lt;/form&gt;
+    </div>
+
+    <h2>Beneficios</h2>
+    <ul>
+      <li>Permite al sistema identificar y gestionar usuarios de manera individual.</li>
+      <li>Proporciona una experiencia personalizada a cada usuario registrado.</li>
+      <li>Mejora la seguridad al autenticar usuarios mediante contraseñas.</li>
+    </ul>
+  </div>
+</body>
+</html>
